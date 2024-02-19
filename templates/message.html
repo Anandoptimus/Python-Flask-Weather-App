@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Details</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fce5cd; /* Light peach background color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .message-container {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #fce5cd; /* Light pink speech bubble background color */
+            display: inline-block;
+        }
+
+        .user-message {
+            color: #900c3f; /* Dark pink text color for user messages */
+        }
+
+        .bot-message {
+            color: #0c5460; /* Dark teal text color for bot messages */
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #3498db; /* Blue button color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="message-container">
+    <div class="message user-message">Name: "{{name}}"</div>
+    <div class="message user-message">Latitude: "{{lat}}"</div>
+    <div class="message user-message">Longitude: "{{lon}}"</div>
+    <div class="message user-message">Weather: "{{weather}}"</div>
+    <div class="message user-message">Temperature: "{{temp}}"</div>
+    <div class="message user-message">Pressure: "{{pressure}}"</div>
+    <div class="message user-message">Humidity: "{{humidity}}"</div>
+    <div class="message user-message">Country: "{{country}}"</div>
+
+</div>
+
+</body>
+</html>

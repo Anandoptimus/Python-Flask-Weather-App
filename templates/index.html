@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Location Information</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #fce5cd;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            position: relative;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        input:focus + .placeholder,
+        input:valid + .placeholder,
+        input:placeholder-shown + .placeholder {
+            top: 10px;
+            font-size: 12px;
+            color: #3498db;
+        }
+
+        .placeholder {
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            font-size: 14px;
+            color: #aaa;
+            pointer-events: none;
+            transition: top 0.3s ease-in-out, font-size 0.3s ease-in-out;
+        }
+
+        button {
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore Location Information</h1>
+</header>
+<form method="post">
+<div class="input-container">
+    <input type="text" name="city" id="inputField" required>
+    <label class="placeholder" for="inputField"></label>
+</div>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
+
