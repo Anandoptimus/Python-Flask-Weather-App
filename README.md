@@ -47,6 +47,10 @@ This is a simple Flask web application that retrieves weather information for a 
 - Flask
 - Requests
 
+## Screenshots
+![image](https://github.com/Anandoptimus/Day96/assets/101982906/0015ae9d-6c97-41a4-b9b8-0871bb243d6c)
+![image](https://github.com/Anandoptimus/Day96/assets/101982906/39e401e1-8012-4b6a-afaf-1437581c4792)
+
 ## Contribution
 Feel free to contribute to the project by opening issues or submitting pull requests.
 
